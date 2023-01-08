@@ -12,12 +12,12 @@ for(const folder of fs.readdirSync('./commands')) {
     }
 }
 
-const rest = new REST({ version: '10' }).setToken('your token');
+const rest = new REST({ version: '10' }).setToken(process.env.CLIENT_TOKEN);
 
 (async() => {
     try {
         console.log('Start downloading commands');
-        const data = await rest.put(Routes.applicationCommands('app token'), { body: commands });
+        const data = await rest.put(Routes.applicationCommands(process.env.APP_TOKEN), { body: commands });
 
         console.log('Downloading has been finished');
     }
