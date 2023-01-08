@@ -12,12 +12,12 @@ for(const folder of fs.readdirSync('./commands')) {
     }
 }
 
-const rest = new REST({ version: '10' }).setToken('MTA2MTY2MzIzMjgwMjE2ODg2Mg.G0ME1p.fVEVtO3rAJPmTLE_644trML1qO5jYBUXevLfjM');
+const rest = new REST({ version: '10' }).setToken('your token');
 
 (async() => {
     try {
         console.log('Start downloading commands');
-        const data = await rest.put(Routes.applicationCommands('1061663232802168862'), { body: commands });
+        const data = await rest.put(Routes.applicationCommands('app token'), { body: commands });
 
         console.log('Downloading has been finished');
     }
