@@ -17,7 +17,6 @@ fetch('url to API').then(async res => {...});
 // whole code which fetch meme from redit or giphy
 // ---- https://github.com/Kajgit/v14_tutorial/blob/main/Commands/General/meme.js ---
 
- 
 ```
 
 ## To do
