@@ -21,3 +21,4 @@ fetch('url to API').then(async res => {...});
 
 ## To do
 - [ ] Create meme function which will be fetching data from redit or giphy
+- [ ] Check how to get random meme from wanted category from redit
